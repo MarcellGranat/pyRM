@@ -1,6 +1,6 @@
 import pyhere
 
-def main(file_path):
+def file_path(file_path):
     full_path = pyhere.here(file_path)
     folder_parts = list(full_path.parts[1:-1])
     folder_path = "/" + "/".join(folder_parts)
@@ -9,6 +9,6 @@ def main(file_path):
 
 if __name__ == "__main__":
     file_path = "README.md"
-    print(main(file_path))
+    print(file_path(file_path))
 
 
